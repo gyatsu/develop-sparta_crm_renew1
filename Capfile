@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Load DSL and set up stages
 require 'capistrano/setup'
 
@@ -7,19 +6,18 @@ require 'capistrano/deploy'
 require 'capistrano/rails'
 
 # require 'capistrano/rbenv'
-=======
 require 'capistrano/setup'
 
 require 'capistrano/deploy'
 
 require 'capistrano/rbenv'
->>>>>>> branch
+
 set :rbenv_type, :user
 set :rbenv_ruby, '2.1.0'
 require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
-<<<<<<< HEAD
+
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
@@ -40,8 +38,6 @@ require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
-Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
-=======
 
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
->>>>>>> branch
+

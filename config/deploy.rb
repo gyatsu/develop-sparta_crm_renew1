@@ -2,34 +2,33 @@
 lock '3.4.0'
 
 set :application, 'sparta_crm_renew1'
-<<<<<<< HEAD
 set :repo_url, 'https://github.com/gyatsu/develop-sparta_crm_renew1.git'
 
-=======
+
 set :repo_url, 'git@github.com:gyatsu/develop-sparta_crm_renew1.git'
 set :branch, 'master'
->>>>>>> branch
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-<<<<<<< HEAD
+
 # set :deploy_to, '/var/www/my_app_name'
 
 # Default value for :scm is :git
 # set :scm, :git
-=======
+
 set :deploy_to, '/var/www/sparta_crm_renew1'
 
 # Default value for :scm is :git
 set :scm, :git
->>>>>>> branch
+
 
 # Default value for :format is :pretty
 # set :format, :pretty
 
 # Default value for :log_level is :debug
-<<<<<<< HEAD
+
 # set :log_level, :debug
 
 # Default value for :pty is false
@@ -43,7 +42,7 @@ set :scm, :git
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-=======
+
 set :log_level, :debug
 
 # Default value for :pty is false
@@ -57,29 +56,27 @@ set :linked_dirs, %w('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', bundle publi
 
 # Default value for default_env is {}
 set :default_env, { path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" }
->>>>>>> branch
+
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
 namespace :deploy do
-<<<<<<< HEAD
+
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
-=======
+
   after :finishing, 'deploy:cleanup'
   # after :restart, :clear_cache do
   #   on roles(:web), in: :groups, limit: 3, wait: 10 do
->>>>>>> branch
+
       # Here we can do anything such as:
       # within release_path do
       #   execute :rake, 'cache:clear'
       # end
     end
-<<<<<<< HEAD
+
   end
 
 end
-=======
->>>>>>> branch
