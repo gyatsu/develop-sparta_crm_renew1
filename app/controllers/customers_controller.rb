@@ -1,8 +1,12 @@
 class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy ]
+  # before_action :authenticate_user!
+  before_action :authenticate_user!
   def index
     # @customers = Customer.all
-    @customers = Customer.page(params[:page])
+    # @customers = Customer.page(params[:page])
+    @q = Customer.ransack(params[:q])
+    @customers = @q.result.page(params[:page])
   end
 
   def new
@@ -33,6 +37,8 @@ class CustomersController < ApplicationController
 
   def show
     # @customer = Customer.find(params[:id])
+    @comment = Comment.new
+    @comments = @customer.comments
   end
 
   def destroy

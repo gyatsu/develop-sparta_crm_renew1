@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 gem 'kaminari'
+gem 'ransack'
+gem 'devise'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -45,5 +47,12 @@ group :development, :test do
   gem 'faker'
   gem 'faker-japanese'
   gem 'rails-erd'
+
+  gem 'rb-readline'
+  gem 'unicorn'
+  gem 'capistrano','~> 3.0.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+
 end
 
