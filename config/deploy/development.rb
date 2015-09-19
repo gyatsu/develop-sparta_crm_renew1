@@ -1,12 +1,12 @@
 set :stage, :development
 
 role :app, %w{root@160.16.109.151}
-role :web, %w{root@$160.16.109.151}
-role :db, %w{root@$160.16.109.151}
+role :web, %w{root@160.16.109.151}
+role :db, %w{root@160.16.109.151}
 
-role :app, %w{root@${IP_ADDRESS}}
-role :web, %w{root@${IP_ADDRESS}}
-role :db, %w{root@${IP_ADDRESS}}
+role :app, %w{root@160.16.109.151}
+role :web, %w{root@160.16.109.151}
+role :db, %w{root@160.16.109.151}
 
 
 server '160.16.109.151',
