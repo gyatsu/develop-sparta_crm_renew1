@@ -50,7 +50,7 @@ group :development, :test do
 
   gem 'rb-readline'
   gem 'unicorn'
-  gem 'capistrano'
+  gem 'capistrano','~> 3.0.1'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
 
