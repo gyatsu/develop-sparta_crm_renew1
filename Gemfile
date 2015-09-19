@@ -6,6 +6,13 @@ gem 'rails', '4.2.3'
 gem 'kaminari'
 gem 'ransack'
 gem 'devise'
+
+gem 'rb-readline'
+gem 'unicorn'
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
