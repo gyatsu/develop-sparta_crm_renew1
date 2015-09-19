@@ -47,5 +47,12 @@ group :development, :test do
   gem 'faker'
   gem 'faker-japanese'
   gem 'rails-erd'
+
+  gem 'rb-readline'
+  gem 'unicorn'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+
 end
 
